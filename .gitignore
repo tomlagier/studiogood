@@ -9,4 +9,4 @@ Thumbs.db
 /app/storage/cache
 /app/storage/views
 /app/storage/sessions
-/.svn
+**/.svn
