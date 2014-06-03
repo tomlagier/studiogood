@@ -1,0 +1,170 @@
+@extends('desktop.layouts.main')
+
+@section('title')
+StudioGood Jobs
+@stop
+
+@section('page-tags')
+
+@stop
+
+@section('page-styles')
+<link type="text/css" rel="stylesheet" href="/css/jobs.css?{{time()}}">
+@stop
+
+@section('page-header')
+
+@stop
+
+@section('page-content')
+
+<div class="post-hero text-divider has-parallax pad-large">
+	<div class="divider-overlay"></div>
+	<img alt="Post Background" class="divider-bg" src="/img/background-jobs1.jpg" />
+	
+	<div class="row divider-content">
+		<div class="medium-12 columns text-center">
+			<h1 class="text-white">&nbsp;</h1>
+		</div>
+	</div>
+
+</div><!--end of post-hero-->
+<section id="services" class="pad-large">
+	<div class="row">
+		<div class="medium-12 columns text-center">
+			<div class="page-title">
+				<h6 class="alt-h">StudioGood Careers</h6>
+				<div class="medium-4 line"><div class="icon icon-squares"></div></div>
+				<h1>Let's Do Some Good Together</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+		
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+		
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+		
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+		
+		<div class="medium-4 columns offix">
+			<div class="service">
+				<div class="service-text">
+					<div class="service-icon">
+						<div class="icon icon-profile-add"></div>
+					</div>
+					<h1>Job Title</h1>
+					<div class="line"></div>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+					</p>
+				</div>
+				<div class="line"></div>
+				<a href="/details"><div class="btn"><h6 class="alt-h">Details</h6></div></a>
+				
+			</div>
+		</div><!--end of individual service-->
+		
+		
+
+	</div>
+	
+
+</section><!--end of services section-->
+@stop
+
+@section('page-overlays')
+
+@stop
+
+@section('page-footer')
+
+@stop
+
+@section('page-scripts')
+
+@stop

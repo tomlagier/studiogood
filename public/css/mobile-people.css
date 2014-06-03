@@ -1,0 +1,101 @@
+.social-link
+{
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	margin: 3px; 
+	display: inline-block;
+}
+
+.social-link a
+{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.social-icons
+{
+	height: 40px;
+	margin: .65em 0;
+}
+
+#modal .info-area
+{
+	margin: 1em 0;
+}
+
+.type-Twitter
+{
+	background-image: url('/img/social_icons/twitter.png');
+}
+
+.type-Facebook
+{
+	background-image: url('/img/social_icons/facebook.png');
+}
+
+.type-LinkedIn
+{
+	background-image: url('/img/social_icons/linkedin.png');
+}
+
+.type-Yelp
+{
+	background-image: url('/img/social_icons/yelp.png');
+}
+
+.type-FourSquare
+{
+	background-image: url('/img/social_icons/foursquare.png');
+}
+
+.type-Instagram
+{
+	background-image: url('/img/social_icons/instagram.png');
+}
+
+.type-Pinterest
+{
+	background-image: url('/img/social_icons/pinterest.png');
+}
+
+.type-Digg
+{
+	background-image: url('/img/social_icons/digg.png');
+}
+
+.type-Reddit
+{
+	background-image: url('/img/social_icons/reddit.png');
+}
+
+.type-GooglePlus
+{
+	background-image: url('/img/social_icons/googleplus.png');
+}
+
+.type-YouTube
+{
+	background-image: url('/img/social_icons/youtube.png');
+}
+
+.type-Flickr
+{
+	background-image: url('/img/social_icons/flickr.png');
+}
+
+.type-Tumblr
+{
+	background-image: url('/img/social_icons/tumblr.png');
+}
+
+.type-Bloggr
+{
+	background-image: url('/img/social_icons/bloggr.png');
+}
+
+.type-StumbledUpon
+{
+	background-image: url('/img/social_icons/stumbledupon.png');
+}

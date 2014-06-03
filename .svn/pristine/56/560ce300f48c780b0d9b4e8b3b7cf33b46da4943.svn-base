@@ -1,0 +1,227 @@
+@extends('layouts.main')
+
+@section('page-tags')
+
+@stop
+
+@section('page-styles')
+
+<link type="text/css" rel="stylesheet" href="/css/grid.css">
+<link type="text/css" rel="stylesheet" href="/css/flipcard.css">
+
+@stop
+
+@section('page-header')
+
+<div id="navigation">
+	<div class="row">
+
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#about-scroll">About</a></li>
+				<li><a class="smooth-scroll" href="#services-scroll">Services</a></li>
+				<li><a class="smooth-scroll" href="#work-scroll">Work</a></li>
+			</ul>
+		</div>
+	
+	
+		<div class="medium-2 columns text-center">
+			<a class="smooth-scroll" href="#home-scroll"><img id="alt-logo" alt="logo" src="/img/logo.png" /></a>
+		</div>
+	
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#pricing-scroll">Pricing</a></li>
+				<li><a class="smooth-scroll" href="#blog-scroll">Blog</a></li>
+				<li><a class="smooth-scroll" href="#contact-form-link">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div class="mobile-toggle"><i class="icon icon_menu-square_alt2"></i></div>
+	</div>
+</div>
+
+@stop
+
+@section('page-content')
+<div class="row profiles-heading">
+	<div class="medium-12 columns text-center">
+		<div class="page-title">
+			<h1>Meet team <strong>good</strong></h1>
+			<div class="medium-4 line"><div class="icon icon-profile"></div></div>
+			<div><em>Some sort of something should go here</em></div>
+		</div>
+	</div>
+</div>
+
+<div class="row profiles">
+	<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+					Some modal content
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+@stop
+
+@section('page-overlays')
+<div id="modal"></div>
+<div id="overlay"></div>
+@stop
+
+@section('page-footer')
+
+@stop
+
+@section('page-scripts')
+
+<script src="/js/grid.js"></script>
+<script src="/js/flipcard.js"></script>
+
+@stop

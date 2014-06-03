@@ -1,0 +1,78 @@
+<?php
+
+class HomeController extends BaseController {
+
+	/*
+	|--------------------------------------------------------------------------
+	| Default Home Controller
+	|--------------------------------------------------------------------------
+	|
+	| You may wish to use controllers instead of, or in addition to, Closure
+	| based routes. That's great! Here is an example controller method to
+	| get you started. To route to this controller, just add the route:
+	|
+	|	Route::get('/', 'HomeController@showWelcome');
+	|
+	*/
+
+	function __construct()
+	{
+		$appId = '199273466809846';
+		$appSecret = 'dd92d8c8b220a48e446bc1851dde0307';		
+		$profileId = '185738835209';
+		
+		$authToken = $this->fetchUrl("https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&client_id={$appId}&client_secret={$appSecret}");
+		$this->facebookFeed = json_decode($this->fetchUrl("https://graph.facebook.com/{$profileId}/feed?{$authToken}"));
+	}
+
+
+	public function getIndex()
+	{
+
+		return View::make('home.home')
+			->with('page', 'home')
+			->with('fbFeed', $this->facebookFeed);
+	}
+
+	public function getServices()
+	{
+		return View::make('services.services')->with('page', 'services');
+	}
+
+	public function getPeople()
+	{
+		$count_people = People::where('id', '>', '0')->count();
+		$employees = People::take($count_people)->get();
+		return View::make('people.people')->with('page', 'people')
+				->with('employees', $employees)
+				->with('fbFeed', $this->facebookFeed);;
+	}
+
+	public function getWork()
+	{
+		return View::make('work.work')->with('page', 'work');
+	}
+
+	public function postLogin()
+	{
+		//Login goes here
+	}
+
+	//Shortcut for OAuth
+	function fetchUrl($url){
+
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_TIMEOUT, 20);
+		// You may need to add the line below
+		// curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
+
+		$feedData = curl_exec($ch);
+		curl_close($ch); 
+
+		return $feedData;
+
+	}
+
+}

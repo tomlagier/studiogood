@@ -1,0 +1,9 @@
+a.job_application {
+	position:relative;float:right;right:10%;color:#0d5cbf;
+}
+
+a.job_back {
+	position:relative;float:left;left:10%;color:#0d5cbf;
+}
+
+.job_tile .service {height:361px;}

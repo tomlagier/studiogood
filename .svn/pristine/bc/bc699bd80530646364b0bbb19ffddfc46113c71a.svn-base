@@ -1,0 +1,23 @@
+$('.card-container').hover(function(){
+	var self = $(this)
+	$(this).addClass('hover').flip();
+}, function(){
+	$(this).removeClass('hover').flip();
+});
+
+setInterval(function(){
+	$.each($('.flipped-lr'), function(index, el){
+		if(!$(el).hasClass('hover')){
+			$(el).flip();
+		}
+	});
+}, 300);
+
+$('.grid-item').click(function(){
+	$('#modal').text($(this).find('.modal-content').text());
+	$('#overlay, #modal').addClass('show');
+});
+
+$('#overlay').click(function(){
+	$('#overlay, #modal').removeClass('show');
+});

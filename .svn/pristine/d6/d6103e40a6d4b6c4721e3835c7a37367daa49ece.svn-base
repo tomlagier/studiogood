@@ -1,0 +1,10 @@
+<?php
+
+class People extends Eloquent {
+	protected $table = 'people_table';
+
+	public static function getPeopleAssets($id) {
+		$people_assets = self::find($id);
+		return $people_assets($id);
+	}
+}

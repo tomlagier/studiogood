@@ -1,0 +1,133 @@
+<?php 
+
+/**
+ * Test Model Config for Administrator
+ * For documentation of model config options visit: http://administrator.frozennode.com/docs/model-configuration
+ * Also see the Field Types in the documentation to learn how to use them.
+ */
+
+return array(
+
+	'title' => 'People',
+
+	'single' => 'person',
+
+	'model' => 'People',
+
+	/**
+	 * The display Columns
+	 */
+	
+	'columns' => array(
+		'id',
+		'active' => array(
+			'title' => 'Active',
+			'type' => 'bool',
+		),
+		'name' => array(
+			'title' => 'Name',
+			'output' => '(:value)',
+		),
+		'job_title' => array(
+			'title' => 'Job Title',
+			'output' => '(:value)',
+		),
+		'location' => array(
+			'title' => 'Location',
+			'output' => '(:value)',
+		),
+		'tattoos' => array(
+			'title' => 'Tattoos',
+			'type' => 'number',
+			'output' => '(:value)',
+		),
+		'biography' => array(
+			'title' => 'Biography',
+			'type' => 'textarea',
+			'output' => '(:value)',
+		),
+		'image' => array(
+			'title' => 'Profile Pic',
+			'output' => '<img src="/img/profiles/(:value)" border="0" alt="" width="200" class="profile-pic" />',
+		),
+		'twitter' => array(
+			'title' => 'Twitter Handle',
+			'output' => '<a href="http://www.twitter.com/(:value)" target="_blank">@(:value)</a>',
+		),
+		'linkedin' => array(
+			'title' => 'LinkedIn',
+			'output' => '<a href="(:value)" target="_blank">(:value)</a>',
+		),
+	),
+
+	/**
+	 * The Editable Columns
+	 */
+	
+	'edit_fields' => array(
+		'active' => array(
+			'title' => 'Active',
+			'type' => 'bool',
+		),
+		'name' => array(
+			'title' => 'Name',
+			'output' => '(:value)',
+		),
+		'job_title' => array(
+			'title' => 'Job Title',
+			'output' => '(:value)',
+		),
+		'location' => array(
+			'title' => 'Location',
+			'output' => '(:value)',
+		),
+		'tattoos' => array(
+			'title' => 'Tattoos',
+			'type' => 'number',
+			'output' => '(:value)',
+		),
+		'biography' => array(
+			'title' => 'Biography',
+			'type' => 'textarea',
+			'output' => '(:value)',
+		),
+		'image' => array(
+			'title' => 'Profile Pic',
+			'type' => 'image',
+			'naming' => 'keep',
+			'location' => 'img/profiles/',
+			'size_limit' => 5,
+		),
+		'twitter' => array(
+			'title' => 'Twitter Handle',
+			'output' => '<a href="http://www.twitter.com/(:value)" target="_blank">@(:value)</a>',
+		),
+		'linkedin' => array(
+			'title' => 'LinkedIn<br>(https://www.linkedin.com/pub/ryan-stuhl/11/a9a/558)',
+			'output' => '<a href="(:value)" target="_blank">(:value)</a>',
+		),
+	),
+
+	/**
+	 * Filter Fields
+	 */
+	
+	'filters' => array(
+		'id',
+		'name' => array(
+			'title' => 'Name',
+		),
+	),
+
+	'rules' => array(
+		'active' => 'required',
+		'name' => 'required',
+		'job_title' => 'required',
+		
+		'tattoos' => 'required',
+		'biography' => 'required',
+		'image' => 'required',
+		'twitter' => 'required',
+		'linkedin' => 'required',
+	),
+);

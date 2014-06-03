@@ -1,0 +1,212 @@
+@extends('layouts.main')
+
+@section('page-tags')
+
+@stop
+
+@section('page-styles')
+
+<link type="text/css" rel="stylesheet" href="/css/grid.css">
+<link type="text/css" rel="stylesheet" href="/css/flipcard.css">
+
+@stop
+
+@section('page-header')
+
+@stop
+
+@section('page-content')
+<div class="row profiles-heading">
+	<div class="medium-12 columns text-center">
+		<div class="page-title">
+			<h1>Meet team <strong>good</strong></h1>
+			<div class="medium-4 line"><div class="icon icon-profile"></div></div>
+			<div><em>Some sort of something should go here</em></div>
+		</div>
+	</div>
+</div>
+
+<div class="row profiles">
+	<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						<h2>First M. Last</h2>
+						<img class="profile-pic" src="/img/profiles/employee_of_the_month.jpg" border="0" alt="">
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						<h2>First M. Last</h2>
+						<p><strong>TITLE:</strong> Job Title</p>
+						<p><strong>LOCATION:</strong> CityVille</p>
+						<div class="click-me">
+							<p>EXPAND</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-content" style="display:none;">
+						<img class="profile-pic" src="/img/profiles/employee_of_the_month.jpg" border="0" alt="">
+						<p><strong>TITLE:</strong> Job Title</p>
+						<p><strong>LOCATION:</strong> CityVille</p>
+						<p><strong>TATTOOS:</strong> 5</p>
+						<p><strong>BIO:</strong> Cray Tumblr tote bag fashion axe, keffiyeh banh mi crucifix kale chips letterpress cornhole readymade Cosby sweater pickled. Austin PBR cardigan crucifix Kickstarter. Butcher fanny pack shabby chic, flannel Odd Future food truck raw denim drinking vinegar scenester swag banh mi seitan Schlitz narwhal. Mlkshk Shoreditch irony Marfa, before they sold out tattooed actually fanny pack messenger bag Godard chia roof party. Slow-carb wayfarers Portland normcore master cleanse. Sriracha letterpress yr, vegan fanny pack Kickstarter direct trade Echo Park Tonx single-origin coffee leggings. Hashtag Schlitz Carles photo booth.</p>
+							<p><img src="/img/social_icons/instagram.png" alt="" width="32" border="0" class="social">  <a href="##" class="crystal">@instagramHandle</a></p>
+							<p><img src="/img/social_icons/twitter.png" alt="" width="32" border="0" class="social">  <a href="##" class="crystal">@twitterHandle</a></p>
+							<p><img src="/img/social_icons/mail.png" alt="" width="32" border="0" class="social">  <a href="mailto:email@email.email?subject=Nice Pineapple Head&body=I like your picture of a pineapple head. You look like a fruit." class="crystal">email@email.email</a></p>
+							<p><img src="/img/social_icons/slack_icon.png" alt="" width="32" border="0" class="social">  <a href="##" class="crystal">@slackHandle</a></p>
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li><li class="grid-item card-container">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+@stop
+
+@section('page-overlays')
+<div id="modal"></div>
+<div id="overlay"></div>
+@stop
+
+@section('page-footer')
+
+@stop
+
+@section('page-scripts')
+
+<script src="/js/grid.js"></script>
+<script src="/js/flipcard.js"></script>
+
+@stop

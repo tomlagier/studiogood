@@ -1,0 +1,10 @@
+<?php
+
+class Whimsey extends Eloquent {
+	protected $table = 'whimseys';
+
+	public function person() {
+		return $this->belongsTo('People', 'person_id');
+	}
+
+}

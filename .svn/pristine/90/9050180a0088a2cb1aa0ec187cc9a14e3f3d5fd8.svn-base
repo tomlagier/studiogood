@@ -1,0 +1,231 @@
+.filter
+{
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	cursor: pointer;
+	width: 200px;
+}
+
+.filter:first-child
+{
+	margin-right: 1em;
+}
+
+.filter.active
+{
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	background: #0d5cbf;
+}
+ 
+.portfolio-entries
+{
+	margin-top: 3em;
+}
+
+.modal {
+	position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    background:rgba(0,0,0,0.9);
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border:none;
+    border: 3px solid #0d5cbf;
+}
+
+.modal h1 {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color:#fff;
+    text-align:left;
+    font-size:4em;
+    line-height:1;
+    margin: 0 0 .1em 0;
+	padding: 0 .3em .1em 0;
+    width:100%;
+    display:block;
+    border-bottom: 1px solid #0d5cbf;
+}
+.modal a.close {
+    width: 20px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    z-index: 2014;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: transparent;
+    background-image: url('/img/btn_close.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    transition: background-image .3s;
+    -webkit-transition: background-image .3s;
+    -moz-transition: background-image .3s;
+}
+
+.modal a.close:hover
+{
+    background-image: url('/img/btn_close_blue2.png');
+}
+
+.modal .content {
+	padding:20px;
+}
+
+.overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.overlay.curr
+{
+    z-index: 9999;
+    left: 0;
+}
+
+.overlay.prev
+{
+    z-index: 10000;
+    left: -100%;
+}
+
+.overlay.next
+{
+    z-index: 10000;
+    left: 100%;
+}
+
+.transition
+{
+    left: 0;
+    transition: opacity .3s, left .65s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: opacity .3s, left .65s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: opacity .3s, left .65s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navigation {
+    width:100px;
+    height:50px;
+    background:rgba(0, 0, 0, 0.9);
+    position:absolute;
+    z-index:10000;
+    overflow:hidden;
+    border: 3px solid #0d5cbf;
+}
+
+.navigation .btn-wrapper
+{
+    font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size:60px;
+    font-weight:lighter;
+    text-align:center;
+    position:absolute;
+    z-index:10001;
+    bottom: 0;
+    cursor: pointer;
+    color:#fff;
+    width:50%;
+    height:100%;
+}
+
+.overlay .navigation .prev {
+    left:0;
+}
+.overlay .navigation .next {
+    right:0;
+}
+.nav-btn:hover {    
+    color:#0d5cbf;
+}
+
+.nav-btn
+{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    width: 37px;
+    height: 35px;
+}
+
+.prev .nav-btn
+{
+    background-image: url('/img/arrow-left.png');
+}
+
+.next .nav-btn
+{
+    background-image: url('/img/arrow-right.png');
+}
+
+.prev:hover .nav-btn
+{
+    background-image: url('/img/arrow-left-blue.png');
+}
+
+.next:hover .nav-btn
+{
+    background-image: url('/img/arrow-right-blue.png');
+}
+
+.fade-text {
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    pointer-events: none;
+}
+
+.fade-text h1 {
+    font-size: 5.5em;
+}
+.fade-text.fadeIn {
+    opacity: 1;
+}
+.fade-text.fadeOut {
+    opacity: 0;
+}
+
+.project_url
+{
+    float: right;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.modal .info-section
+{
+    color: white;
+}
+
+#caseName .blue
+{
+    color: #0d5cbf;
+}
+
+.hidden
+{
+    opacity: 0;
+}

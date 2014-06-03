@@ -1,0 +1,111 @@
+.filter
+{
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	cursor: pointer;
+	width: 200px;
+}
+
+.filter:first-child
+{
+	margin-right: 1em;
+}
+
+.filter.active
+{
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	background: #0d5cbf;
+}
+ 
+.portfolio-entries
+{
+	margin-top: 3em;
+}
+
+#modal {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    background:rgba(0,0,0,0.9);
+    /*max-width: 630px;
+	min-width: 320px;*/
+    height: auto;
+    z-index: 10000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border:none;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#modal h1 {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color:#fff;
+    text-align:left;
+    font-size:4em;
+    line-height:1;
+    margin: 0 0 .1em 0;
+	padding: 0 0 .1em 0;
+    width:100%;
+    display:block;
+    border-bottom: 1px solid #0d5cbf;
+}
+#modal a.close {
+    width:3%;
+    height:auto;
+    display:block;
+    position:absolute;
+    z-index:2014;
+    top:31px;
+    right:20px;
+    background:transparent;
+    color:transparent;
+    text-decoration:none;
+    border:none;
+}
+
+#modal .content {
+	padding:20px;
+}
+#overlay {
+    position: fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	background-size:cover;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    /*cursor:pointer;*/
+}
+.navigation {
+	width:100px;height:50px;background:rgba(0,0,0,0.9);position:fixed;bottom:20%;left:47%;z-index:10000;overflow:hidden;
+}
+.navigation div#prev {
+	width:50%;height:100%;display:block;color:#fff;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-size:60px;font-weight:lighter;text-align:center;position:absolute;z-index:10001;left:0;bottom:14px;cursor:pointer;
+}
+.navigation div#next {
+	width:50%;height:100%;display:block;color:#fff;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-size:60px;font-weight:lighter;text-align:center;position:absolute;z-index:10001;right:0;bottom:14px;cursor:pointer;
+}
+.navigation .nav-btn:hover {color:#0d5cbf;}
+
+
+

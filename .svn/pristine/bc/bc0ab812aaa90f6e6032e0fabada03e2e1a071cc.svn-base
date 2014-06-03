@@ -1,0 +1,47 @@
+<!-- Begin header content -->
+@yield('page-header', '')
+
+{{--Primary nav bar goes here --}}
+<div id="navigation">
+	<div class="row">
+
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#about-scroll">About</a></li>
+				<li><a class="smooth-scroll" href="#services-scroll">Services</a></li>
+				<li><a class="smooth-scroll" href="#work-scroll">Work</a></li>
+			</ul>
+		</div>
+	
+	
+		<div class="medium-2 columns text-center">
+			&nbsp;
+			{{-- <a class="smooth-scroll" href="#home-scroll"><img id="logo" alt="logo" src="http://placehold.it/150x100" /></a> --}}
+		</div>
+	
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#pricing-scroll">Pricing</a></li>
+				<li><a class="smooth-scroll" href="#blog-scroll">Blog</a></li>
+				<li><a class="smooth-scroll" href="#contact-form-link">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div class="mobile-toggle"><i class="icon icon_menu-square_alt2"></i></div>
+	</div>
+</div>
+
+{{-- Secondary nav goes here. Appears once scrolled 50% of the way down the home view --}}
+
+<div id="secondary-navigation">
+	<ul>
+		<li data-target="home"><a class="smooth-scroll" href="#home-scroll"><span class="icon icon-home"></span></a></li>
+		<li data-target="services"><a class="smooth-scroll" href="#services-scroll"><span class="icon icon-heart"></span></a></li>
+		<li data-target="case-studies"><a class="smooth-scroll" href="#case-studies"><span class="icon icon-eye"></span></a></li>
+		<li data-target="image"><a class="smooth-scroll" href="#pizza-image"><span class="icon icon-graph-rising"></span></a></li>
+		<li data-target="stats"><a class="smooth-scroll" href="#stats"><span class="icon icon-accelerator"></span></a></li>
+		<li data-target="contact"><a class="smooth-scroll" href="#contact-form-link"><span class="icon icon-pencil"></span></a></li>
+	</ul>
+</div>
+
+<!-- End header content -->

@@ -1,0 +1,291 @@
+@extends('layouts.main')
+
+@section('page-tags')
+
+@stop
+
+@section('page-styles')
+
+<link type="text/css" rel="stylesheet" href="/css/grid.css?{{time();}}">
+<link type="text/css" rel="stylesheet" href="/css/portfolio.css?{{time();}}">
+<link type="text/css" rel="stylesheet" href="/css/flipcard.css">
+
+@stop
+
+@section('page-header')
+
+@stop
+
+@section('page-content')
+
+<div class="row portfolio-heading">
+	<div class="medium-12 columns text-center">
+		<div class="page-title">
+			<h1>Our work</h1>
+			<div class="medium-4 line"><div class="icon icon-agenda"></div></div>
+			<div><em>Subhead goes here, just like every other heading</em></div>
+		</div>
+	</div>
+</div>
+
+<div class="row portfolio-filters text-center">
+	<span id="good-work-toggle" class="filter active">Good Work</span><span id="work-for-good-toggle" class="filter">Work for Good</span>
+</div>
+
+<div class="row portfolio-entries">
+	<ul id="container" class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+		<li class="grid-item card-container" data-id="1">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+					Some modal content
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container" data-id="2">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container" data-id="3">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+		<li class="grid-item card-container" data-id="4">
+			<div class="grid-item-inner card">
+				<div class="front">
+					<div class="inner">
+						front content
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+						back content
+					</div>
+				</div>
+				<div class="modal-content">
+					Some modal content goes here
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<ul id="work-for-good" class="hidden">
+	<li class="grid-item card-container" data-id="5">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+				Some modal content
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="6">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="7">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="8">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+</ul>
+
+<ul id="good-work" class="hidden">
+	<li class="grid-item card-container" data-id="1">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+				Some modal content
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="2">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="3">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+	<li class="grid-item card-container" data-id="4">
+		<div class="grid-item-inner card">
+			<div class="front">
+				<div class="inner">
+					front content
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					back content
+				</div>
+			</div>
+			<div class="modal-content">
+				Some modal content goes here
+			</div>
+		</div>
+	</li>
+</ul>
+
+@stop
+
+@section('page-overlays')
+
+<div id="modal"></div>
+<div id="overlay"></div>
+
+@stop
+
+@section('page-footer')
+
+@stop
+
+@section('page-scripts')
+
+<script src="/js/grid.js"></script>
+<script src="/js/flipcard.js"></script>
+<script src="/js/quicksand.js"></script>
+
+<script>
+	$('#good-work-toggle').on('click touchstart', function(){
+		$('.filter').removeClass('active');
+		$(this).addClass('active');
+		$('#container').quicksand($('#good-work li'), function(){
+			window.setupFlipCards();
+		});
+	});
+
+	$('#work-for-good-toggle').on('click touchstart', function(){
+		$('.filter').removeClass('active');
+		$(this).addClass('active');
+		setupFlipCards();
+		$('#container').quicksand($('#work-for-good li'), function(){
+			window.setupFlipCards();
+		});
+	});
+</script>
+
+@stop

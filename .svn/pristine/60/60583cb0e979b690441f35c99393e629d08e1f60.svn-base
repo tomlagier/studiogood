@@ -1,0 +1,71 @@
+<!-- Begin footer content -->
+@yield('page-footer', '')
+
+{{-- Generic footer goes here --}}
+<a id="contact-form-link"></a>
+<section id="contact" class="text-divider bg-cover pad-large" data-nav="contact">
+
+	<img alt="Slider Background" class="divider-bg" src="/img/contact-background.jpg" />
+
+	<div class="row divider-content">
+		<div class="medium-4 columns text-center contact-method">
+			<a href="#"><div class="icon icon-geolocalizator text-white"></div></a>
+			<span class="text-white"><em>San Luis Obispo, CA</em></span>
+		</div>
+		
+		<div class="medium-4 columns text-center contact-method">
+			<a href="#"><div class="icon icon-mail-open text-white"></div></a>
+			<span class="text-white"><em>hello@studiogood.com</em></span>
+		</div>
+		
+		<div class="medium-4 columns text-center contact-method">
+			<a href="#"><div class="icon icon-smartphone text-white"></div></a>
+			<span class="text-white"><em>805 123 1234</em></span>
+		</div>
+	</div>
+	
+	<div class="row divider-content">
+		<div class="medium-8 medium-centered columns">
+			<form id="contact-form" class="text-center">
+				<h1 class="text-white">Drop us a line</h1>
+				<input id="form-name" type="text" placeholder="Name" />
+				<input id="form-email" type="text" placeholder="Email" />
+				<input id="form-msg" type="text" placeholder="Message" />
+				<div class="text-right">
+					<span id="details-error" class="text-white">*Error: Please complete all fields correctly</span>
+					<span id="form-sent" class="text-white">Thankyou, your enquiry has been sent!</span>
+					<div class="btn white-btn clear-btn"><h6 class="alt-h text-white">Clear</h6></div>
+					<div id="form-btn" class="btn white-btn"><h6 class="alt-h text-white">Send</h6></div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="row divider-content">
+		<div class="medium-12 columns text-center">
+			<div class="social-links offix">
+				<a href="#"><h3 class="text-white">Twitter</h3></a>
+				<a href="#"><h3 class="text-white">Facebook</h3></a>
+				<a href="#"><h3 class="text-white">Instagram</h3></a>
+				<a href="#"><h3 class="text-white">Linkedin</h3></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row divider-content">
+		<div class="medium-12 columns text-center">
+			<span class="copy-text text-white alt-h">&copy; 2014 CauseMediaGroup LLC</span>
+		</div>
+	</div>
+
+</section><!--end of contact section-->
+<!-- End footer content -->
+
+<!-- Begin footer scripts -->
+@include('core.scripts')
+
+<!-- Begin page-specific scripts -->
+@yield('page-scripts', '')
+
+<!-- End page-specific scripts -->
+<!-- End footer scripts -->

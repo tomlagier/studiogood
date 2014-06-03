@@ -1,0 +1,4 @@
+<!-- Begin header content -->
+@yield('page-header', '')
+
+<!-- End header content -->

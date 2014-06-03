@@ -1,0 +1,188 @@
+#modal #employeeName
+{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.heading-row
+{
+	border-bottom: 1px solid #0d5cbf;
+	margin-bottom: 1em;
+}
+
+.social-link
+{
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	float:right;
+	margin: 3px;
+}
+
+.social-link a
+{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.type-Twitter
+{
+	background-image: url('/img/social_icons/twitter.png');
+}
+
+.type-Facebook
+{
+	background-image: url('/img/social_icons/facebook.png');
+}
+
+.type-LinkedIn
+{
+	background-image: url('/img/social_icons/linkedin.png');
+}
+
+.type-Yelp
+{
+	background-image: url('/img/social_icons/yelp.png');
+}
+
+.type-FourSquare
+{
+	background-image: url('/img/social_icons/foursquare.png');
+}
+
+.type-Instagram
+{
+	background-image: url('/img/social_icons/instagram.png');
+}
+
+.type-Pinterest
+{
+	background-image: url('/img/social_icons/pinterest.png');
+}
+
+.type-Digg
+{
+	background-image: url('/img/social_icons/digg.png');
+}
+
+.type-Reddit
+{
+	background-image: url('/img/social_icons/reddit.png');
+}
+
+.type-GooglePlus
+{
+	background-image: url('/img/social_icons/googleplus.png');
+}
+
+.type-YouTube
+{
+	background-image: url('/img/social_icons/youtube.png');
+}
+
+.type-Flickr
+{
+	background-image: url('/img/social_icons/flickr.png');
+}
+
+.type-Tumblr
+{
+	background-image: url('/img/social_icons/tumblr.png');
+}
+
+.type-Bloggr
+{
+	background-image: url('/img/social_icons/bloggr.png');
+}
+
+.type-StumbledUpon
+{
+	background-image: url('/img/social_icons/stumbledupon.png');
+}
+
+#heading-row
+{
+	position: relative;
+}
+
+#employee-social
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: .55em;
+	padding: 0;
+}
+
+#modal .content
+{
+	padding: 0 0 0 1em;
+}
+
+.profile-pic
+{
+	background-size: cover;
+	background-position: center center;
+}
+
+#modal #whimseys
+{
+	margin-top: 2em;
+}
+
+.grid-item .inner
+{
+	background-size: cover;
+	background-position: center center;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    background:#ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#overlay a.close {
+    width:3%;
+    height:auto;
+    display:block;
+    position:absolute;
+    z-index:2014;
+    top:3%;
+    right:1.8%;
+    background:transparent;
+    color:transparent;
+    text-decoration:none;
+    border:none;
+}
+
+#overlay a.close img {
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+.employee-title
+{
+	position: relative;
+	height: 10px;
+}
+
+.employee-title > div
+{
+	transition: opacity .6s;
+	-webkit-transition: opacity .6s;
+	-moz-transition: opacity .6s;
+	position: absolute;
+}

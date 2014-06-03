@@ -1,0 +1,27 @@
+.filter
+{
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.filter:first-child
+{
+	margin-right: 3em;
+	margin-left: .8em;
+}
+
+.filter.active
+{
+	font-weight: bold;
+	color: #0d5cbf;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+ 
+.portfolio-entries
+{
+	margin-top: 3em;
+}

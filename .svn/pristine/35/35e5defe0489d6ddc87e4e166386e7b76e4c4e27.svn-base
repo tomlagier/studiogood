@@ -1,0 +1,104 @@
+#home-video-player{
+	position: absolute;
+}
+
+#home-video-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#video-overlay{
+	margin-top: 4em;
+}
+
+.title-upper .alt-h{
+	width: 13em;
+}
+
+.alt-h.left{
+	text-align:left;
+}
+
+.alt-h.right{
+	text-align: right;
+}
+
+@media (max-width: 767px){
+	.headline{
+		font-size: 80px;
+		letter-spacing: 5px;
+	}
+}
+
+.title-lower{
+	padding-top: 6em;
+}
+
+#navigation{
+	top: 50px;
+}
+
+#home-logo{
+	width: 100px;
+	display: block;
+	z-index: 100;
+	position: relative;
+	left: 50%;
+	margin-left: -50px;
+	top: 103px;
+}
+
+.btn{
+	border-color: #0d5cbf;
+}
+
+.btn:hover{
+	background: #0d5cbf;	
+}
+
+.btn:hover h6{
+	color: white;
+}
+
+#loader{
+	top: 0;
+}
+
+.page-title .line
+{
+	background: #777;
+}
+
+.icon, .stat .icon
+{
+	color: #0d5cbf;
+
+}
+
+.service-text h1{
+	font-size: 1.75rem;
+}
+
+.icon, .services .icon, .line .icon{
+	color: #0d5cbf;
+}
+
+strong{
+	color: #0d5cbf;	
+}
+
+.copy-text{
+	width: 20em;
+}
+
+#contact .icon{
+	color: white;
+}
+
+#contact .btn{
+	border-color: white;
+}

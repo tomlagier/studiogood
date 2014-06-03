@@ -1,0 +1,6 @@
+<section id="pizza-image" class="pad-large">
+	<div class="row text-center">
+		<img src="/img/pizza-image.jpg" alt="Our strategy is like a pizza pie" class="pizza-image">
+		<div class="text-white">Lorem ipsum etc etc etc.</div>
+	</div>
+</section>

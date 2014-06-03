@@ -1,0 +1,136 @@
+work model config
+
+<?php 
+
+/**
+ * Work Model Config for Administrator
+ * For documentation of model config options visit: http://administrator.frozennode.com/docs/model-configuration
+ * Also see the Field Types in the documentation to learn how to use them.
+ */
+
+return array(
+
+	'title' => 'Work',
+
+	'single' => 'Case Study',
+
+	'model' => 'Work',
+
+	/**
+	 * The display Colunns
+	 */
+
+	'columns' => array(
+		'id',
+		'active' => array(
+			'title' => 'Active',
+			'type' => 'bool',
+		),
+		'project_name' => array(
+			'title' => 'Project Name',
+			'output' => '(:value)',
+		),
+		'subtitle' => array(
+			'title' => 'Sub Title',
+			'output' => '(:value)',
+		),
+		'project_type' => array(
+			'title' => 'Project Type',
+			'type' => 'enum',
+			'options' => array('good-work', 'work-for-good'),
+		),
+		'description' => array(
+			'title' => 'Description',
+			'type' => 'textarea',
+			'output' => '(:value)',
+		),
+		'image' => array(
+			'title' => 'Image',
+			'output' => '<img src="/img/work/main/(:value)" width="200" border="0" alt="" class="project_image" />',
+		),
+		'thumbnail' => array(
+			'title' => 'Thumbnail',
+			'output' => '<img src="/img/work/thumbnails/(:value)" width="100" border="0" alt="" class="project_thumb" />',
+		),
+		'url' => array(
+			'title' => 'URL',
+			'output' => '<a href="(:value)" target="_blank">(:value)</a>',
+		),
+	),
+
+	/**
+	 * The Editable Columns
+	 */
+	
+	'edit_fields' => array(
+		'active' => array(
+			'title' => 'Active',
+			'type' => 'bool',
+		),
+		'project_name' => array(
+			'title' => 'Project Name',
+			'output' => '(:value)',
+		),
+		'subtitle' => array(
+			'title' => 'Sub Title',
+			'output' => '(:value)',
+		),
+		'project_type' => array(
+			'title' => 'Project Type',
+			'type' => 'enum',
+			'options' => array('good-work', 'work-for-good'),
+		),
+		'description' => array(
+			'title' => 'Description',
+			'type' => 'textarea',
+			'output' => '(:value)',
+		),
+		'image' => array(
+			'title' => 'Image',
+			'type' => 'image',
+			'naming' => 'keep',
+			'location' => 'img/work/main/',
+			'size_limit' => 5,
+		),
+		'thumbnail' => array(
+			'title' => 'Thumbnail',
+			'type' => 'image',
+			'naming' => 'keep',
+			'location' => 'img/work/thumbnails/',
+			'size_limit' => 5,
+		),
+		'url' => array(
+			'title' => 'URL',
+			'output' => '<a href="(:value)" target="_blank">(:value)</a>',
+		),
+	),
+
+	/**
+	 * Fields by which you can filter
+	 */
+
+	'filters' => array(
+		'id',
+		'project_name' => array(
+			'title' => 'Project Name',
+		),
+		'project_type' => array(
+			'title' => 'Project Type',
+		),
+	),
+
+	/**
+	 * Fields which are required
+	 */
+
+	'rules' => array(
+		'active' => 'required',
+		'project_name' => 'required',
+		'subtitle' => 'required',
+		'project_type' => 'required',
+		'description' => 'required',
+		'image' => 'required',
+		'thumbnail' => 'required',
+	),
+
+);

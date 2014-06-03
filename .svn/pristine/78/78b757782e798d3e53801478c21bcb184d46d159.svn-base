@@ -1,0 +1,5 @@
+<?php
+
+class Overheard extends Eloquent {
+	protected $table = 'overheards';
+}

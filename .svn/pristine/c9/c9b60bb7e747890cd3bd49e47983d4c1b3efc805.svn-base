@@ -1,0 +1,24 @@
+<!-- Begin header content -->
+@yield('page-header', '')
+
+{{-- Primary navigation --}}
+
+<div id="navigation">
+	<div id="nav-row" class="row">
+		<div id="header-logo">
+			<a class="smooth-scroll headline-logo" id="home-logo" href="#home-scroll"><img alt="logo" src="/img/logo.png" /></a>
+		</div>
+		<div class="text-center" id="main-menu">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="/people">People</a></li>
+				<li><a class="smooth-scroll" href="/work">Work</a></li>
+				<li><a class="smooth-scroll" href="http://blog.studiogood.com">Blog</a></li>
+				<li><a class="smooth-scroll" href="#contact-form-link">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div class="mobile-toggle"><i class="icon icon_menu-square_alt2"></i></div>
+	</div>
+</div>
+
+<!-- End header content -->

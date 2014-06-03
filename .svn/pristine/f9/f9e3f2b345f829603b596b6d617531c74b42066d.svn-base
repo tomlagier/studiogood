@@ -1,0 +1,47 @@
+<section id="case-studies" data-nav="case-studies">
+	
+	<div class="row">	
+		<div class="medium-12 columns text-center">
+			<div class="page-title">
+				<h1>Our case <strong>studies</strong></h1>
+				<div class="medium-4 line"><div class="icon icon-eye"></div></div>
+				<div>We do great work for huge clients. Take a peek at some of the best.</div>
+				<div class="row text-center case-studies-button"><div class="btn"><a href="/work">All of our work</a></div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-divider bg-cover case-study">
+		<div class="case-study-text">
+			<h1>American <strong>Heritage</strong> Chocolate</h1>
+			<div>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+			</div>
+		</div>
+
+		<img alt="Slider Background" class="divider-bg" src="/img/home-poster.jpg" />
+	</div>
+
+	<div class="row text-divider bg-cover case-study">
+		<div class="case-study-text">
+			<h1>American <strong>Heritage</strong> Chocolate</h1>
+			<div>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+			</div>
+		</div>
+
+		<img alt="Slider Background" class="divider-bg" src="/img/home-poster.jpg" />
+	</div>
+
+	<div class="row text-divider bg-cover case-study">
+		<div class="case-study-text">
+			<h1>American <strong>Heritage</strong> Chocolate</h1>
+			<div>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+			</div>
+		</div>
+
+		<img alt="Slider Background" class="divider-bg" src="/img/home-poster.jpg" />
+	</div>
+
+</section>

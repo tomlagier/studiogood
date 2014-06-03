@@ -1,0 +1,69 @@
+<?php
+
+class HomeController extends BaseController {
+
+	/*
+	|--------------------------------------------------------------------------
+	| Default Home Controller
+	|--------------------------------------------------------------------------
+	|
+	| You may wish to use controllers instead of, or in addition to, Closure
+	| based routes. That's great! Here is an example controller method to
+	| get you started. To route to this controller, just add the route:
+	|
+	|	Route::get('/', 'HomeController@showWelcome');
+	|
+	*/
+
+
+	public function getIndex()
+	{
+
+		return View::make('home.home')->with('page', 'home');
+	}
+
+	public function getServices()
+	{
+		return View::make('services.services')->with('page', 'services');
+	}
+
+	public function getPeople()
+	{
+		$count_people = People::where('id', '>', '0')->count();
+		$employees = People::take($count_people)->get();
+		return View::make('people.people')->with('page', 'people')
+				->with('employees', $employees);
+	}
+
+	public function getWork()
+	{
+		return View::make('work.work')->with('page', 'work');
+	}
+
+	public function postLogin()
+	{
+		//Login goes here
+	}
+
+	public function postForm()
+	{
+		$name = Input::get('name');
+		$email = Input::get('email');
+		$text = Input::get('text');
+
+		$to      = 'hello@studiogood.com';
+		$subject = 'StudioGood.com message from ' . $name . ' (' . $email . ')';
+		$message = 'New contact form message from ' . $name . ' (' . $email . ")\r\n---\r\nMessage content:\r\n" . $text;
+		$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\nX-Mailer: PHP/" . phpversion();
+
+		$success = mail($to, $subject, $message, $headers, '-f' . $email);
+
+		if($success)
+		{
+			return 'Success';
+		}
+
+		return 'Failure';
+	} 
+
+}

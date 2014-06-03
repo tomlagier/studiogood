@@ -1,0 +1,49 @@
+function getTwitterFeed()
+{
+
+}
+
+function getInstagramFeed()
+{
+
+}
+
+function sizeOffsetBlock()
+{
+	var possOffset = $('#navigation').offset().top - $(window).scrollTop()
+	var offset = $('#navigation').height() + ( possOffset > 0 ? possOffset : 0);
+	$('.offset-block').height(offset);
+	$('.sidebar-slide .inner').height($(window).height() - offset - 10);
+}
+
+$(document).ready(function()
+{
+	sizeOffsetBlock();
+});
+
+$(window).scroll(function(){
+	sizeOffsetBlock();
+});
+
+$(window).resize(function(){
+	sizeOffsetBlock();
+})
+
+$('.sidebar-tab').on('click', function(){
+    $('#social-nav').addClass('open');
+    $('.sidebar-tab').removeClass('active');
+    $(this).addClass('active');
+
+    $('.sidebar-slide .inner').html($($(this).attr('data-target')).html());
+});
+
+$('html').on('click', function(evt){
+    if($('#social-nav').hasClass('open'))
+    {
+        if($(evt.target).closest('#social-nav').length === 0)
+        {
+            $('#social-nav').removeClass('open');
+            $('.sidebar-tab').removeClass('active');
+        }
+    }
+});

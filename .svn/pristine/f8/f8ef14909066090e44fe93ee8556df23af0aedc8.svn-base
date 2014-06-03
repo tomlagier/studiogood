@@ -1,0 +1,426 @@
+#home-video-player{
+	position: absolute;
+}
+
+#home-video-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#video-overlay{
+	margin-top: 5em;
+}
+
+.title-upper .alt-h{
+	width: 13em;
+}
+
+.alt-h.left{
+	text-align:left;
+}
+
+.alt-h.right{
+	text-align: right;
+}
+
+@media (max-width: 767px){
+	.headline{
+		font-size: 80px;
+		letter-spacing: 5px;
+	}
+}
+
+.title-lower{
+	padding-top: 6em;
+}
+
+#navigation{
+	top: 50px;
+}
+
+#home-logo{
+	width: 80px;
+	display: block;
+	z-index: 100;
+	position: relative;
+	left: 50%;
+	margin-left: -40px;
+	top: 100px;
+}
+
+.btn{
+	border-color: #0d5cbf;
+}
+
+.btn:hover{
+	background: #0d5cbf;	
+}
+
+.btn:hover h6{
+	color: white;
+}
+
+#loader{
+	top: 0;
+}
+
+.page-title .line
+{
+	background: #777;
+}
+
+.icon, .stat .icon
+{
+	color: #0d5cbf;
+
+}
+
+.service-text h1{
+	font-size: 1.75rem;
+}
+
+.icon, .services .icon, .line .icon{
+	color: #0d5cbf;
+}
+
+strong{
+	color: #0d5cbf;	
+}
+
+.copy-text{
+	width: 20em;
+}
+
+#contact .icon{
+	color: white;
+}
+
+#contact .btn{
+	border-color: white;
+}
+
+.cover-bg .slider-bg
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#case-studies
+{
+	position: relative;
+}
+
+.flex-direction-nav .flex-prev
+{
+	left: 50px;
+}
+
+.flex-direction-nav .flex-next
+{
+	right: 50px;
+}
+
+.flex-direction-nav a
+{
+	opacity: 1;
+	color: white;
+	height: 60px;
+}
+
+.content-box
+{
+	background: rgba(0,0,0,.5);
+	color: white;
+	position: absolute;
+	padding: 1.5em !important;
+	max-width: 300px;
+	top: auto;
+}
+
+.content-box h4
+{
+	color: white;
+	font-weight: bold;
+}
+
+.content-box.bottom
+{
+	bottom: 125px;
+}
+
+.content-box.top
+{
+	top: 125px;
+}
+
+.content-box.left
+{
+	left: 125px;
+}
+
+.content-box.right
+{
+	right: 125px;
+}
+
+@media (max-width: 767px){
+	.content-box
+	{
+		bottom: 0 !important;
+		width: 100% !important;
+		left: 0 !important;
+		right: 0 !important;
+	}
+}
+
+#pizza-image, #pizza-image .icon
+{
+	background: #777;
+}
+
+#pizza-image h1
+{
+	color: white;
+}
+
+#pizza-image .line
+{
+	background: white;
+}
+
+#pizza-image .subline
+{
+	color: white;
+}
+
+.pizza-image
+{
+	padding-bottom: 2em;
+}
+
+#secondary-navigation
+{
+	position: fixed;
+	left: 50px;
+	bottom: 50px;
+	color: white;
+	z-index: 9999;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+
+	transition: all .7s;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+}
+
+#secondary-navigation:hover
+{
+	opacity: 1;
+}
+
+#secondary-navigation.visible
+{
+	opacity: 1;
+}
+
+#secondary-navigation ul
+{
+	list-style: none;
+	padding: 1.5em;
+	margin: 0;
+}
+
+#secondary-navigation li
+{
+	padding: 0;
+}
+
+#secondary-navigation .icon
+{
+	color: white;
+}
+
+#secondary-navigation li:hover .icon
+{
+	color: #0d5cbf;
+}
+
+#secondary-navigation .active .icon
+{
+	color: #0d5cbf;
+}
+
+#contact
+{
+	position: static;
+}
+
+.hidden
+{
+	opacity: 0 !important;
+}
+
+.hide
+{
+	display: none !important;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td
+{
+	line-height: 1.2em;
+}
+
+.flex-direction-nav a
+{
+	font-size: 0;
+	top: 55%;
+}
+
+.flex-direction-nav a:before
+{
+	position: relative;
+	top: 10px;
+}
+
+.slide
+{
+	height: 100%;
+    width: 33.333333333%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 135% auto;
+    position: relative;
+}
+
+.slide-wrapper
+{
+	width: 300%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
+}
+
+#services-slider-controls
+{
+	margin-bottom: 3.5em;
+}
+
+.control
+{
+	text-align: center;
+	border-color: #0d5cbf;
+	display: table;
+	height: 60px;
+}
+
+.control.active, .control:hover, .control.active h6
+{
+	color: white;
+	background: #0d5cbf;
+}
+
+.control h6
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.slide-wrapper[target="slide-1"]
+{
+	margin-left: 0;
+}
+
+.slide-wrapper[target="slide-2"]
+{
+	margin-left: -100%;
+}
+
+.slide-wrapper[target="slide-3"]
+{
+	margin-left: -200%;
+}
+
+#services-slider-slides
+{
+	overflow: hidden;
+	height: 400px;
+}
+
+#services .page-title
+{
+	margin-bottom: 3.5em;
+}
+
+.service-image
+{
+	height: 100%;
+}
+
+.home-service-text
+{
+	padding-left: 2em;
+	height: 100%;
+}
+
+.home-service-text h2
+{
+	margin: 1em 0;
+}
+
+#service-text-1
+{
+	background: transparent url('/img/chicken-icon.png') bottom right no-repeat;
+
+}
+
+#service-image-1
+{
+	background: transparent url('/img/awesome-service-image.png') no-repeat 0 0;
+	background-size: cover;
+}
+
+#service-text-2
+{
+	background: transparent url('/img/chicken-icon.png') bottom left no-repeat;
+
+}
+
+#service-image-2
+{
+	background: transparent url('/img/awesome-service-image.png') no-repeat 0 0;
+	background-size: cover;
+}
+
+#service-text-3
+{
+	background: transparent url('/img/chicken-icon.png') bottom right no-repeat;
+
+}
+
+#service-image-3
+{
+	background: transparent url('/img/awesome-service-image.png') no-repeat 0 0;
+	background-size: cover;
+}
+
+/** Profile Page **/
+ /* main container div */
+/*.card {overflow:hidden;}*/
+.grid-item .front {background:#0d5cbf;border:1px solid #6e6e6e;font-family:Arial, sans-serif;color:#fdfdfd;} /* Individual "card" */
+.grid-item .front .inner {background:#0d5cbf;}
+.grid-item .front .inner h2 {width:100%;height:auto;display:block;text-indent:0.5em;font-family:Arial, sans-serif;font-size:1.2em;color:#fdfdfd;margin:0;padding:0.5em 0;}
+.grid-item .back {background:#6e6e6e;border:1px solid #0d5cbf;font-family:Arial, sans-serif;color:#fdfdfd;}
+.grid-item .back .inner {background:#6e6e6e;}
+.grid-item .back .inner h2 {font-family:Arial, sans-serif;font-size:2em;color:#fdfdfd;margin:0.5em;padding:0;}
+.grid-item .back .inner p {font-family:Arial, sans-serif;font-size:1em;color:#fdfdfd;margin:0.5em;padding:0;}
+.grid-item .back .inner p a.crystal {background:transparent;color:transparent;text-decoration:none;border:none;}

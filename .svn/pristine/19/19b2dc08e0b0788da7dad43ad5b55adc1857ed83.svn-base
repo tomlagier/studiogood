@@ -1,0 +1,39 @@
+<section id="home-video">
+	
+	{{-- Background video --}}
+	
+	<div id="home-video-wrapper">
+		<video id="home-video-player" class="video-js vjs-default-skin"
+		  controls preload="auto"
+		  poster="/img/home-poster.jpg"
+		  data-setup=''>
+		 {{-- IMPORTANT: Need to edit nginx headers to respond to video formats properly --}}
+		 <source src="/video/home-video-placeholder.mp4" type='video/mp4' />
+		 <source src="/video/home-video-placeholder.webm" type='video/webm' />
+		 <source src="/video/home-video-placeholder.ogv" type='video/ogg' />
+		</video>
+	</div>
+
+	{{-- Text overlay --}}
+
+	<a class="smooth-scroll headline-logo" id="home-logo" href="#home-scroll"><img alt="logo" src="/img/logo.png" /></a>
+	
+	<div class="row text-center" id="video-overlay">
+		<div class="medium-12 medium-centered columns">
+			<div class="home-title offix">
+				<div class="medium-5 title-top left"></div>
+				<div class="medium-2 left">&nbsp;</div>
+				<div class="medium-5 title-top left"></div>
+				<div class="title-upper offix">
+					<h6 class="left alt-h text-white">Tagline 1</h6>
+					<h6 class="right alt-h text-white">Tagline 2</h6>
+				</div>
+				<h1 class="headline">StudioGood</h1>
+				<div class="title-lower">
+					<p class="text-white"><em>Subline 1 is a little longer and goes here</em></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>

@@ -1,0 +1,15 @@
+<section id="pizza-image" class="pad-large">
+	<div class="row">
+		<div class="medium-12 columns text-center">
+			<div class="page-title">
+				<h1>Yet <strong>Another</strong> Heading</h1>
+				<div class="medium-4 line"><div class="icon icon-graph-rising"></div></div>
+				<div class="subline"><em>This text is important, but not as important as that text</em></div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center">
+		<img src="/img/pizza-image.jpg" alt="Our strategy is like a pizza pie" class="pizza-image">
+		<div class="text-white">Lorem ipsum etc etc etc.</div>
+	</div>
+</section>

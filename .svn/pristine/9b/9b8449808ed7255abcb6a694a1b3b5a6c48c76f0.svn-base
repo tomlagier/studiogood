@@ -1,0 +1,38 @@
+<!-- Begin header content -->
+@yield('page-header', '')
+
+{{-- Primary navigation --}}
+
+<div id="navigation">
+	<div class="row">
+
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#about-scroll">About</a></li>
+				<li><a class="smooth-scroll" href="#services-scroll">Services</a></li>
+				<li><a class="smooth-scroll" href="#work-scroll">Work</a></li>
+			</ul>
+		</div>
+	
+		<div class="medium-2 columns text-center">
+			@if ($page === 'home')
+				&nbsp;
+			@else
+				<a class="smooth-scroll" href="#home-scroll"><img id="alt-logo" alt="logo" src="/img/logo.png" /></a>
+			@endif
+			
+		</div>
+	
+		<div class="medium-5 columns text-center">
+			<ul class="menu">
+				<li><a class="smooth-scroll" href="#pricing-scroll">Pricing</a></li>
+				<li><a class="smooth-scroll" href="#blog-scroll">Blog</a></li>
+				<li><a class="smooth-scroll" href="#contact-form-link">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div class="mobile-toggle"><i class="icon icon_menu-square_alt2"></i></div>
+	</div>
+</div>
+
+<!-- End header content -->

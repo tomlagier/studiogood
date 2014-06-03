@@ -1,0 +1,72 @@
+<?php 
+
+/**
+ * Test Model Config for Administrator
+ * For documentation of model config options visit: http://administrator.frozennode.com/docs/model-configuration
+ * Also see the Field Types in the documentation to learn how to use them.
+ */
+
+return array(
+
+	'title' => 'Test Page',
+
+	'single' => 'test',
+
+	'model' => 'Test',
+
+	/**
+	 * The display Columns
+	 */
+	
+	'columns' => array(
+		'id',
+		'heading' => array(
+			'title' => 'Heading',
+			'output' => '(:value)',
+		),
+		/* Example of a link and an image and a textarea column. */
+		// 'link' => array( //Define your column as an array. Configurations of that column will lay within.
+		// 	'title' => 'Link',
+		// 	'output' => '<a href="(:value)" target="_blank"></a>', //When you reference this you will just get a nice link around an element ex: an image.
+		// ),
+		// 'image' => array(
+		// 	'title' => 'Image',
+		// 	'output' => '<img src="path/to/images/folder/(:value)" border="0" alt="" width="250" />', //I gave it a width so it would fit in the backend table nicely.
+		// ),
+		// 'block' => array(
+		// 	'title' => 'Block of Text',
+		// 	'output' => '(:value)',
+		// 	'type' => 'textarea', //need to set the type of text input here. 
+		// ),
+	),
+
+	/**
+	 * The Editable Columns
+	 */
+	
+	'edit_fields' => array(
+		'heading' => array(
+			'title' => 'Heading',
+			'output' => '(:value)',
+		),
+		/* Example of a link and an image and a textarea edit field. */
+		// 'link' => array(
+		// 	'title' => 'Link',
+		// 	'output' => '<a href="(:value)" target="_blank"></a>',
+		// ),
+		// 'image' => array(
+		// 	'title' => 'Image',
+		// 	'type' => 'image',
+		// 	'naming' => 'keep', //options are keep to keep the original name or random to make a random image name.
+		// 	'location' => 'path/to/images/folder/', //note here you only need to define the path to the images.
+		// 	'size_limit' => 5, //size is defined in MBs. 5 = 5MB.
+		// ),
+		// 'block' => array(
+		// 	'title' => array(
+		// 		'title' => 'Block of Text',
+		// 		'type' => 'textarea', //different type is defined here. Gives a default value for character limit. You can define it.
+		// 		'output' => '(:value)',
+		// 	),
+		// ),
+	),
+);

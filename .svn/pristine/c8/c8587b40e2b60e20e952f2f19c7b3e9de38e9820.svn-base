@@ -1,0 +1,122 @@
+@extends('desktop.layouts.main')
+
+@section('page-tags')
+
+@stop
+
+@section('page-styles')
+
+<link type="text/css" rel="stylesheet" href="/css/grid.css?{{time();}}">
+<link type="text/css" rel="stylesheet" href="/css/flipcard.css?{{time();}}">
+
+@stop
+
+@section('page-header')
+
+@stop
+
+@section('page-content')
+<div class="row profiles-heading">
+	<div class="medium-12 columns text-center">
+		<div class="page-title">
+			<h1>Meet team <strong>good</strong></h1>
+			<div class="medium-4 line"><div class="icon icon-profile"></div></div>
+			<div><em>Some sort of something should go here</em></div>
+		</div>
+	</div>
+</div>
+
+<div class="row profiles">
+	<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-4 small-block-grid-2 grid-container">		
+		@foreach($employees as $employee)
+		<?php if($employee->active) { ?>
+			<li class="grid-item card-container">
+				<div class="grid-item-inner card">
+					<div class="front">
+						<div class="inner">
+						<img src="/img/thumbnails/{{$employee->thumbnail}}" border="0" alt="" />
+						</div>
+					</div>
+
+					<div class="back">
+						<div class="inner text-center">
+							<h2>{{$employee->name}}</h2>
+							<div>{{$employee->job_title}}</div>
+							<h5><strong>LOCATION</strong></h5>
+							<div>{{$employee->location}}</div>
+							<h3>More</h3>
+						</div>
+					</div>
+
+					<div class="modal-content row" style="display:none;">
+						<div class="profile-pic medium-4 columns">
+							<img src="/img/profiles/{{$employee->image}}" border="0" alt="" />
+						</div>
+						<div class="content medium-8 columns">
+							<h1 id="employeeName">{{$employee->name}}</h1>
+							<div class="employee-title"><em>{{$employee->job_title}}</em></div>
+
+							<div class="info-area">
+								<div class="info-section">
+									<h4>LOCATION</h4>
+									<div>{{$employee->location}}</div>
+								</div>
+								
+								<div class="info-section">
+									<h4>Tattoos</h4>
+									<div>{{$employee->tattoos}}</div>
+								</div>
+
+								<div class="info-section">
+									<h4>Bio</h4>
+									<div>{{nl2br($employee->biography)}}</div>
+								</div>
+							</div>
+
+							<div class='socials'>
+								<a href="{{$employee->twitter}}" target="_blank" class="crystal"><img src="/img/social_icons/twitter.png" class="social" width="32" border="0" alt="Twitter icon" /></a>  <a href="{{$employee->twitter}}" target="_blank">&#64;{{$employee->twitter}}</a><br>
+								<a href="{{$employee->linkedin}}" target="_blank" class="crystal"><img src="/img/social_icons/linkedin.png" class="social" width="32" border="0" alt="LinkedIn icon" /></a>  <a href="{{$employee->linkedin}}" target="_blank">LinkedIn Profile</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</li>
+			<?php } ?>
+		@endforeach
+	</ul>
+</div>
+
+@stop
+
+@section('page-overlays')
+<div id="modal"></div>
+<div id="overlay">
+<a href="" class="close"><img src="/img/btn_close_blue.png" border="0" alt=""></a>
+</div>
+<script>
+$(document).ready(function() {
+	$("a.close").on("click touchstart", function(e) {
+		e.preventDefault();
+		$("#modal").click();
+	});
+
+	$('h1#employeeName').html(function(index, curHTML) {
+       var text = curHTML.split(/[\s-]/),
+           newtext = '<span class="blue">' + text.pop() + '</span>';
+       return text.join(' ').concat(' ' + newtext);
+     });
+});
+</script>
+@stop
+
+@section('page-footer')
+
+@stop
+
+@section('page-scripts')
+
+<script src="/js/grid.js"></script>
+<script src="/js/flipcard.js"></script>
+
+@stop
