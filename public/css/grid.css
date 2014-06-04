@@ -8,14 +8,19 @@
     padding:0;
     clear:both;
 }
-
-.profiles .grid-container .grid-item, .portfolio-entries .grid-container .grid-item {
+.profiles .grid-container .grid-item, .grid-entries .grid-container .grid-item {
     height: 300px;
     perspective: 1000;
     transition: all .7s;
     -webkit-transition: all .7s;
     -moz-transition: all .7s;
 }
+
+.grid-entries
+{
+    margin-top: 30px;
+}
+
 .grid-item .hidden {
     opacity: 0;
 }
@@ -51,7 +56,6 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 .profile-pic img {
     width: 100%;
     height: auto;
@@ -67,68 +71,59 @@
     font-size:4em;
     line-height:1;
     margin: 0 0 .1em 0;
-	padding: 0 0 .1em 0;
+    padding: 0 0 .1em 0;
     display:block;
     border-bottom: 1px solid #0d5cbf;
 }
-
-#modal #caseName
-{
+#modal #caseName {
     color: white;
     width: 100%;
 }
-
 #modal h1 span.blue {
     color:#0d5cbf;
 }
-
-#modal .employee-title
-{
-	font-size: 1.5em;
+#modal .employee-title {
+    font-size: 1.5em;
 }
-
-#modal h4
-{
-	color: #0d5cbf;
-	margin: .1em 0;
+#modal h4 {
+    color: #0d5cbf;
+    margin: .1em 0;
 }
-
-#modal .info-section
-{
-	margin: 0 0 .8em 0;
+#modal .info-section {
+    margin: 0 0 .8em 0;
 }
- .work_modal .info-section div {
+.work_modal .info-section div {
     font-family:'Cardo', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     color:#fff;
- }
-
-#modal .info-section:last-child
-{
-	margin: 0;
 }
-
-#modal .info-section a.btn {background:#fff;padding:7px 16px;border-radius:16px;border:1px solid #0d5cbf;font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color:#0d5cbf;}
-#modal .info-section a.btn:hover {background:#0d5cbf;color:#fff;}
-
-#modal .info-area
-{
-	margin: 2em 0 0 0;
-	background: #eee;
-	padding: 1em;
-	opacity: inherit;
+#modal .info-section:last-child {
+    margin: 0;
 }
-
-#modal a
-{
-	color: #6e6e6e;
+#modal .info-section a.btn {
+    background:#fff;
+    padding:7px 16px;
+    border-radius:16px;
+    border:1px solid #0d5cbf;
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color:#0d5cbf;
 }
-
-#modal a:hover
-{
-	text-decoration: none;
-	color: #0d5cbf;
+#modal .info-section a.btn:hover {
+    background:#0d5cbf;
+    color:#fff;
 }
-
+#modal .info-area {
+    margin: 2em 0 0 0;
+    background: #eee;
+    padding: 1em;
+    opacity: inherit;
+}
+#modal a {
+    color: #6e6e6e;
+}
+#modal a:hover {
+    text-decoration: none;
+    color: #0d5cbf;
+}
 #modal .socials {
     font-family:'Cardo', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     color:#6e6e6e;
@@ -150,37 +145,22 @@
     border-radius:0.4em;
     margin:0 0 0.5em;
 }
-
-/*<<<<<<< .mine
-#modal a.crystal {
-}
-=======
-#modal img.profile-pic {position:relative;top:0;left:0;z-index:2001;float:left;margin:0;padding:0;border:1px solid #0d5cbf;}
-#modal .content {padding:0 1%;}
-#modal h1 {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color:#000;text-align:left;font-size:4em;line-height:1;margin:0;width:100%;display:block;border-bottom:3px solid #0d5cbf;}
-#modal h1 span.blue {color:#0d5cbf;}
-#modal p {font-family:'Cardo',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color:#6e6e6e;font-size:1.2em;}
-#modal p strong {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color:#0d5cbf;font-size:2em;line-height:1.5;}
-#modal p span {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color:#0d5cbf;font-weight:bold;font-size:1.1em;}
-#modal p img.social {border-radius:0.4em;margin:0 0 0.5em;}
-#modal p a:link, #modal p a:visited {color:#6e6e6e;}
-#modal p a:hover {text-decoration:underline;}
-#modal a.crystal {}
->>>>>>> .r70*/
-/*#modal p.close {font-family:Verdana, sans-serif;font-size:5em;color:rgba(255,255,255,0.7);position:absolute;top:2%;right:-15%;}
-#modal p.close:hover {color:rgba(255,255,255,1);}*/
- #modal.show, #overlay.show {
+#modal.show, #overlay.show {
     opacity: 1;
     visibility: visible;
 }
-
-#overlay img#background {width:100%;height:100%;position:absolute;z-index:inherit;top:0;left:0;}
-
+#overlay img#background {
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:inherit;
+    top:0;
+    left:0;
+}
 .profiles-heading, .portfolio-heading {
     margin-top: 4em;
 }
-
-.portfolio-entries {
+.grid-entries {
     position: relative;
 }
 @media screen and (min-width:320px) and (max-width:600px) {
@@ -188,65 +168,99 @@
         height:260px !important;
     }
 }
-
-.grid-item
-{
+.grid-item {
     cursor: pointer;
 }
-.grid-item .front 
-{
+.grid-item .front {
     border:1px solid #6e6e6e;
     color:#fdfdfd;
-    display:block;height:auto;
+    display:block;
+    height:auto;
 }
-
 .grid-item .front .inner img.profile-pic {
     width:100%;
     height:100%;
     display:block;
 }
-
-.grid-item .front .inner
-{
+.grid-item .front .inner {
     background:#0d5cbf;
 }
-
-
 .grid-item .back {
     border:1px solid #0d5cbf;
 }
-
-.grid-item .back .inner 
-{
+.grid-item .back .inner {
     background:#fff;
 }
-
-.grid-item .back h2
-{
-    font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+.grid-item .back h2 {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size:1.75em;
     color:#6e6e6e;
     margin:0.5em;
     padding:0 0 .5em 0;
     border-bottom: solid 1px #0d5cbf;
 }
-
-.grid-item .back h5
-{
+.grid-item .back h5 {
     margin: 1em 0 .5em;
 }
-
-.grid-item .back h3
-{
+.grid-item .back h3 {
     position: absolute;
     width: 100%;
     bottom: 1em;
 }
-
-.grid-item .back .inner p {font-family:'Cardo',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-size:1em;color:#6e6e6e;text-align:center;margin:0.5em;padding:0;}
-.grid-item .back .inner p strong {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;width:100%;position:relative;display:block;border-bottom:1px solid #0d5cbf;margin:0 0 0.5em;}
-.grid-item .back .inner p a.crystal {background:transparent;color:transparent;text-decoration:none;border:none;}
-.grid-item .back .inner p a.crystal {background:transparent;color:transparent;text-decoration:none;border:none;}
-.grid-item .back .inner .click-me {width:50%;height:auto;display:block;background:transparent;position:absolute;z-index:20002;left:25%;bottom:5%;text-align:center;cursor:pointer;}
-.grid-item .back .inner .click-me p {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-size:1.75em;line-height:1;font-weight:bold;color:#0d5cbf;margin:0 0.5em 0.5em;}
-.grid-item .back .inner .click-me p span {font-family:'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-size:0.5em;font-weight:normal;text-transform:uppercase;color:#0d5cbf;margin:0;text-align:center;}
+.grid-item .back .inner p {
+    font-family:'Cardo', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size:1em;
+    color:#6e6e6e;
+    text-align:center;
+    margin:0.5em;
+    padding:0;
+}
+.grid-item .back .inner p strong {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    width:100%;
+    position:relative;
+    display:block;
+    border-bottom:1px solid #0d5cbf;
+    margin:0 0 0.5em;
+}
+.grid-item .back .inner p a.crystal {
+    background:transparent;
+    color:transparent;
+    text-decoration:none;
+    border:none;
+}
+.grid-item .back .inner p a.crystal {
+    background:transparent;
+    color:transparent;
+    text-decoration:none;
+    border:none;
+}
+.grid-item .back .inner .click-me {
+    width:50%;
+    height:auto;
+    display:block;
+    background:transparent;
+    position:absolute;
+    z-index:20002;
+    left:25%;
+    bottom:5%;
+    text-align:center;
+    cursor:pointer;
+}
+.grid-item .back .inner .click-me p {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size:1.75em;
+    line-height:1;
+    font-weight:bold;
+    color:#0d5cbf;
+    margin:0 0.5em 0.5em;
+}
+.grid-item .back .inner .click-me p span {
+    font-family:'Pathway Gothic One', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size:0.5em;
+    font-weight:normal;
+    text-transform:uppercase;
+    color:#0d5cbf;
+    margin:0;
+    text-align:center;
+}

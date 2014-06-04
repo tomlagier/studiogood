@@ -330,6 +330,26 @@ jQuery(window).load(function () {
 
 /** StudioGood additions **/
 
+/** Shared functions **/
+
+$('.blue-last').html(function(index, curHTML)
+{
+   var text = curHTML.split(/[\s-]/),
+       newtext = '<span class="blue">' + text.pop() + '</span>';
+   return text.join(' ').concat(' ' + newtext);
+});
+
+$('.blue-second').html(function(index, curHTML)
+{
+    var text = curHTML.split('/[\s-]/');
+    if (text.length > 2)
+    {
+        text[1] = '<span class="blue">' + text[1] + '</span>';
+    }
+
+    return text.join(' ');
+});
+
 $.fn.scrollStopped = function(callback) {          
     $(this).scroll(function(){
         var self = this, $this = $(self);
@@ -342,12 +362,6 @@ $.fn.scrollStopped = function(callback) {
 
 jQuery(document).ready(function($){
     $('#navigation').sticky({topSpacing: 0});
-
-    jQuery('#case-studies-slider').flexslider({
-        animationSpeed: 400,
-        directionNav: true,
-        pauseOnHover: true
-    });
 
     $('section').waypoint(function()
     {

@@ -5,41 +5,43 @@
 			<div class="page-title">
 				<h1>We do <strong>good</strong> work</h1>
 				<div class="medium-4 line"><div class="icon icon-heart"></div></div>
-				<div>This might be a good spot for our mission statement. It should probably be a few sentences long and cover our philosophy and yadda yadda. A good intro to the slider below.</div>
+				<div>We believe that good ideas matter, and sharing them through storytelling transcends technology to create real engagement. We’re not unique because we care, we’re unique because we know how to make people care.</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="row" id="services-slider-controls">
+	<div class="row slider-controls" id="services-slider-controls">
 		<div class="control active" data-target="slide-1">
 		    <div class="btn">
-		        <h6 class="alt-h">Branding</h6>
+		        <h6 class="alt-h">Creative</h6>
 		    </div>
 		</div>
 		<div class="control" data-target="slide-2">
 		    <div class="btn">
-		        <h6 class="alt-h">Community Management</h6>
+		        <h6 class="alt-h">Strategy</h6>
 		    </div>
 		</div>
 		<div class="control" data-target="slide-3">
 		    <div class="btn">
-		        <h6 class="alt-h">Social Good</h6>
+		        <h6 class="alt-h">Technology</h6>
 		    </div>
 		</div>
 	</div>
 
-	<div class="row" id="services-slider-slides">
+	<div class="row slider-slides" id="services-slider-slides">
 		<div class="slide-wrapper">
 			<div class="slide" id="services-slide-1">
 				<div class="medium-4 columns offix service-image" id="service-image-1"></div><!--end of individual service-->
 				<div class="medium-8 columns offix home-service-text" id="service-text-1">
-					<h2>Service title</h2>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+					<h2>Creative</h2>
+					<p>We are fueled by creativity & humanity. Our success in the creative space is based on our consistent drive toward tangible results and the need to manufacture ideas and visuals that compel action and change.</p>
 					<p>
 						<ul>
-							<li><em>List item 1</em></li>
-							<li><em>List item 2</em></li>
-							<li><em>List item 3</em></li>
+							<li><em>idea generation</em></li>
+							<li><em>digital brand design</em></li>
+							<li><em>experience design</em></li>
+							<li><em>digital campaigns</em></li>
+							<li><em>concept design and development</em></li>
 						</ul>
 					</p>
 				</div>
@@ -47,13 +49,17 @@
 			<div class="slide" id="services-slide-2">
 				<div class="medium-4 columns offix service-image" id="service-image-2"></div><!--end of individual service-->
 				<div class="medium-8 columns offix home-service-text" id="service-text-2">
-					<h2>Service title</h2>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+					<h2>Strategy</h2>
+					<p>An approach to anything must be thoughtful, or it is nothing. People have to feel something before they will act. Then they will trade their action in exchange for something valuable: Community. Entertainment. Recognition. Information. Prizing. Cause.</p>
 					<p>
 						<ul>
-							<li><em>List item 1</em></li>
-							<li><em>List item 2</em></li>
-							<li><em>List item 3</em></li>
+							<li><em>social media strategy</em></li>
+							<li><em>influencer and celebrity activation</em></li>
+							<li><em>social media management and analytics</em></li>
+							<li><em>content strategy and development</em></li>
+							<li><em>global strategy and localization</em></li>
+							<li><em>search marketing</em></li>
+							<li><em>enterprise training plus education</em></li>
 						</ul>
 					</p>
 				</div>
@@ -61,13 +67,15 @@
 			<div class="slide" id="services-slide-3">
 				<div class="medium-4 columns offix service-image" id="service-image-3"></div><!--end of individual service-->
 				<div class="medium-8 columns offix home-service-text" id="service-text-3">
-					<h2>Service title</h2>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+					<h2>Technology</h2>
+					<p>We believe in creating experiences between brands and people, bridges of authentic communication. Technology plays a foundational role in that connection by superseding traditional and physical boundaries and allowing real two-way conversation.</p>
 					<p>
 						<ul>
-							<li><em>List item 1</em></li>
-							<li><em>List item 2</em></li>
-							<li><em>List item 3</em></li>
+							<li><em>web design and development</em></li>
+							<li><em>user experience</em></li>
+							<li><em>content production</em></li>
+							<li><em>apps and microsites</em></li>
+							<li><em>social media command center development</em></li>
 						</ul>
 					</p>
 				</div>
@@ -76,11 +84,3 @@
 	</div>
 
 </section><!--end of services section-->
-
-<script>
-	$('.control').on('click touchstart', function(){
-		$('.control').removeClass('active');
-		$(this).addClass('active');
-		$('.slide-wrapper').attr('target', $(this).attr('data-target'));
-	});
-</script>

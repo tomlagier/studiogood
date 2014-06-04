@@ -68,4 +68,6 @@ return array(
 
 	),
 
+	'key' => 'Muk1uk'
+
 );

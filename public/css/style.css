@@ -77,6 +77,7 @@ input:focus{ outline: none; }
 /*** TYPOG ***/
 
 .text-white{ color: #fff; }
+.home-title .text-white { font-size:2rem; }
 .reg-weight{ font-weight: normal; }
 .icon{ display: inline-block; -webkit-backface-visibility: hidden; }
 

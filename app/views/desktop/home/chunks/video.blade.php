@@ -19,11 +19,9 @@
 	<div class="row text-center" id="video-overlay">
 		<div class="medium-12 medium-centered columns">
 			<div class="home-title offix">
-				<div class="medium-12 title-top"></div>
-				<h1 class="headline">Headline</h1>
-				<div class="title-lower">
-					<p class="text-white"><em>This is not a tagline</em></p>
-				</div>
+					<p class="text-white"><em>we believe</em></p>
+				<h1 class="headline">Good Ideas</h1>
+					<p class="text-white"><em>can change attitudes and actions</em></p>
 			</div>
 		</div>
 	</div>

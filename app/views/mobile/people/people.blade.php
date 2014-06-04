@@ -1,8 +1,5 @@
 @extends('mobile.layouts.main')
-
-@section('page-tags')
-
-@stop
+{{-- Mobile people page --}}
 
 @section('page-styles')
 
@@ -11,53 +8,68 @@
 
 @stop
 
-@section('page-header')
-
-@stop
-
 @section('page-content')
+
+<!-- Peope page heading section -->
 
 <section id="people-heading" class="text-divider bg-cover pad-large">
 
-<div class="row profiles-heading">
-	<div class="medium-12 columns text-center">
-		<div class="page-title">
-			<h1 class="text-white">Meet team <strong>good</strong></h1>
-			<div class="medium-4 line"></div>
-			<div class="text-white"><em>Some sort of something should go here</em></div>
+	<div class="row profiles-heading">
+		<div class="medium-12 columns text-center">
+			<div class="page-title">
+				<h1 class="text-white">Meet team <strong>good</strong></h1>
+				<div class="medium-4 line"></div>
+				<div class="text-white"><em>Some sort of something should go here</em></div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<img alt="Slider Background" class="divider-bg" src="/img/contact-background.jpg" />
+	<img alt="Slider Background" class="divider-bg" src="/img/contact-background.jpg" />
 
 </section>
 
+<!-- People page tiles section -->
+
 <section id="people-tiles" class="pad-large">
 
-<div class="row profiles">
-	<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-2 small-block-grid-1 grid-container">		
-		@foreach($employees as $employee)
+	<div class="row profiles">
+		<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-2 small-block-grid-1 grid-container">		
+			@foreach($employees as $employee)
 			@if($employee->active)
+
+			<!-- Individual tile -->
+
 			<li class="grid-item card-container" id="employee-{{$employee->id}}">
 				<div class="grid-item-inner card">	
+						
+					<!-- Picture with caption -->
+		
 					<div class="card-inner" style="background: url('/img/thumbnails/{{$employee->thumbnail}}') no-repeat center center; background-size: cover"></div>
 					<div class="caption">
 						<h5 class="name">{{$employee->name}}</h5>
 						<div class="title"><em>{{$employee->job_title}}</em></div>
 					</div>
 
+					<!-- Modal content -->
+
 					<div class="modal-content" style="display:none;">
 						<div class="modal-pic" style="background: url('/img/profiles/{{$employee->image}}') no-repeat center center; background-size: cover"></div>
 						<div class="content">
+						
+							<!-- Employee name ant title -->
+
 							<h1 id="employeeName">{{$employee->name}}</h1>
 							<div class="employee-title"><em>{{$employee->job_title}}, {{$employee->silly_title}}</em></div>
+
+							<!-- Employee social icons -->
 
 							<div class="social-icons">
 								@foreach($employee->socials as $social)
 									<div class="social-link type-{{$social->type}}"><a href="{{$social->profile_link}}" target="_blank"></a></div>
 								@endforeach
 							</div>
+
+							<!-- About employee section -->
 
 							<div class="info-area">								
 
@@ -82,6 +94,8 @@
 								</div>
 							</div>
 
+							<!-- Items of whimsey, 4 per employee -->
+			
 							<div cflass="row" id="whimseys">
 								@foreach($employee->whimseys as $whimsey)
 								<div class="small-6 columns stat text-center">
@@ -91,29 +105,35 @@
 								</div><!-- end of individual stat -->
 								@endforeach
 							</div>
+
 						</div>
 					</div>
+
 				</div>
 			</li>
 			@endif
-		@endforeach
-	</ul>
-</div>
+			@endforeach
+		</ul>
+	</div>
 
 </section>
 
 @stop
 
 @section('page-overlays')
+
+<!-- Modal wrapper -->
+
 <div id="modal">
 </div>
+
+<!-- Overlay wrapper -->
+
 <div id="overlay">
-	<a href="#" class="close"><img src="/img/btn_close_blue.png" border="0" alt=""></a>
+	<a href="#" class="close">
+		<img src="/img/btn_close_blue.png" border="0" alt="">
+	</a>
 </div>
-@stop
-
-@section('page-footer')
-
 @stop
 
 @section('page-scripts')

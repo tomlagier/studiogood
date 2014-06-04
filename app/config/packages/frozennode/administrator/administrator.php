@@ -61,9 +61,7 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		// return Auth::check();
-		// ***** Need to set up a view for logging in. Then need to set up Auth Check for logging in. Right now it just allows access without security. ******
-		return true;
+		return Auth::check();
 	},
 
 	/**
@@ -100,14 +98,14 @@ return array(
 	 *
 	 * @type string
 	 */
-	'login_path' => 'user/login',
+	'login_path' => '/user/login',
 
 	/**
 	 * The logout path is the path where Administrator will send the user when they click the logout link
 	 *
 	 * @type string
 	 */
-	'logout_path' => false,
+	'logout_path' => '/user/logout',
 
 	/**
 	 * This is the key of the return path that is sent with the redirection to your login_action. Session::get('redirect') will hold the return URL.

@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="/css/social-icons.css?version={{ time(); }}" />
 <link rel="stylesheet" href="/css/style.css?version={{ time(); }}" />
 <link rel="stylesheet" href="/css/responsive.css?version={{ time(); }}" />
-<link rel="stylesheet" href="/css/responsive.css?version={{ time(); }}" />
 <link rel="stylesheet" href="/css/master.css?version={{ time(); }}"/>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CCardo:400,400italic%7CPathway+Gothic+One' rel='stylesheet' type='text/css'>
 <link rel="icon" type="image/x-icon" href="img/favicon.ico" />

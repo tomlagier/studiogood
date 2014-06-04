@@ -127,11 +127,6 @@ strong{
 	width: 100%;
 }
 
-#case-studies
-{
-	position: relative;
-}
-
 .flex-direction-nav .flex-prev
 {
 	left: 50px;
@@ -147,51 +142,6 @@ strong{
 	opacity: 1;
 	color: white;
 	height: 60px;
-}
-
-.content-box
-{
-	background: rgba(0,0,0,.5);
-	color: white;
-	position: absolute;
-	padding: 1.5em !important;
-	max-width: 300px;
-	top: auto;
-}
-
-.content-box h2
-{
-	color: white;
-	font-weight: bold;
-	margin-bottom: .5em;
-}
-
-.content-box p
-{
-	margin: 0;
-	padding: 1em 0;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-}
-
-.content-box.bottom
-{
-	bottom: 125px;
-}
-
-.content-box.top
-{
-	top: 125px;
-}
-
-.content-box.left
-{
-	left: 125px;
-}
-
-.content-box.right
-{
-	right: 175px;
 }
 
 @media (max-width: 767px){
@@ -343,86 +293,6 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 {
 	position: relative;
 	top: 10px;
-}
-
-.slide
-{
-	height: 100%;
-    width: 33.33%;
-    float: left;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 135% auto;
-    position: relative;
-    right: -1px;
-}
-
-.slide-wrapper
-{
-	width: 301%;
-    height: 100%;
-    -webkit-transform: translateZ(0);
-    -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    -ms-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
-}
-
-#services-slider-controls
-{
-	margin-bottom: 3.5em;
-	text-align:center;
-}
-
-.control
-{
-	text-align: center;
-	border-color: #0d5cbf;
-	display: inline-table;
-	width: 200px;
-	height: 60px;
-	vertical-align: middle;
-}
-
-.control .btn
-{
-	height: inherit;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.control:nth-child(2)
-{
-	margin: 0 1em;
-}
-
-.control.active .btn, .control:hover .btn, .control.active .btn h6, .control:hover .btn h6
-{
-	color: white;
-	background: #0d5cbf;
-}
-
-.slide-wrapper[target="slide-1"]
-{
-	margin-left: 0;
-}
-
-.slide-wrapper[target="slide-2"]
-{
-	margin-left: -100%;
-}
-
-.slide-wrapper[target="slide-3"]
-{
-	margin-left: -200%;
-}
-
-#services-slider-slides
-{
-	overflow: hidden;
-	height: 400px;
 }
 
 #services .page-title
@@ -951,6 +821,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 .btn
 {
 	font-family: 'Pathway Gothic One',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+	color: #353535;
 }
 
 .btn:hover
@@ -962,4 +833,9 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 {
 	padding-top: 150px;
 	padding-bottom: 50px;
+}
+
+.primary-heading
+{
+	margin-top: 4em;
 }

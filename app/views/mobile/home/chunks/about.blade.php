@@ -5,7 +5,7 @@
 			<div class="page-title">
 				<h1>We do <strong>good</strong> work</h1>
 				<div class="medium-4 line"><div class="icon icon-heart"></div></div>
-				<div>This might be a good spot for our mission statement. It should probably be a few sentences long and cover our philosophy and yadda yadda. A good intro to the slider below.</div>
+				<div>We believe that good ideas matter, and sharing them through storytelling transcends technology to create real engagement. We’re not unique because we care, we’re unique because we know how to make people care.</div>
 			</div>
 		</div>
 	</div>
@@ -14,11 +14,10 @@
 		<div class="large-4 columns offix">
 			<div class="service" id="service-1">
 				<div class="service-text">
-					<h1>Big <strong>Branding</strong></h1>
+					<h1>Creative</h1>
 					<div class="line"></div>
+					<p>We are fueled by creativity & humanity. Our success in the creative space is based on our consistent drive toward tangible results and the need to manufacture ideas and visuals that compel action and change.</p>
 					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-					</p>
 				</div>
 			</div>
 		</div><!--end of individual service-->
@@ -26,11 +25,9 @@
 		<div class="large-4 columns offix">
 			<div class="service" id="service-2">
 				<div class="service-text">
-					<h1>Community <strong>Management</strong></h1>
+					<h1>Strategy</h1>
 					<div class="line"></div>
-					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-					</p>
+					<p>An approach to anything must be thoughtful, or it is nothing. People have to feel something before they will act. Then they will trade their action in exchange for something valuable: Community. Entertainment. Recognition. Information. Prizing. Cause.</p>
 				</div>
 				
 			</div>
@@ -39,11 +36,9 @@
 		<div class="large-4 columns offix">
 			<div class="service" id="service-3">
 				<div class="service-text">
-					<h1>Social <strong>Good</strong></h1>
+					<h1>Technology</h1>
 					<div class="line"></div>
-					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-					</p>
+					<p>We believe in creating experiences between brands and people, bridges of authentic communication. Technology plays a foundational role in that connection by superseding traditional and physical boundaries and allowing real two-way conversation.</p>
 				</div>
 				
 			</div>

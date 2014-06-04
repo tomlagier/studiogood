@@ -34,7 +34,7 @@
 
 </section>
 
-<section id="people-tiles" class="pad-large">
+<section id="people-tiles" class="pad-large tiles">
 
 <div class="row profiles">
 	<ul id="grid-wrapper" class="large-block-grid-4 medium-block-grid-4 small-block-grid-2 grid-container">		
@@ -61,7 +61,7 @@
 						<div class="content medium-8 columns">
 							<div id="heading-row" class="row heading-row">
 								<h1 class="columns small-8" id="employeeName">{{$employee->name}}</h1>
-								<div id="employee-social" class="columns small-4">
+								<div id="employee-social" class="columns small-4 employee-social">
 									@foreach($employee->socials as $social)
 										<div class="social-link type-{{$social->type}}"><a href="{{$social->profile_link}}" target="_blank"></a></div>
 									@endforeach

@@ -116,11 +116,6 @@ class HomeController extends BaseController {
 			   ->with('overheard', $overheard);	
 	}
 
-	public function postLogin()
-	{
-		//Login goes here
-	}
-
 	public function postForm()
 	{
 		$name = Input::get('name');
@@ -140,6 +135,17 @@ class HomeController extends BaseController {
 		}
 
 		return 'Failure';
-	} 
+	}
+
+	public function getStyleguide()
+	{
+		if(Agent::isMobile())
+		{
+			return View::make('mobile.coretemplate')
+			       ->with('page', 'core-template');
+		}
+		return View::make('desktop.coretemplate')
+		       ->with('page', 'core-template');
+	}
 
 }

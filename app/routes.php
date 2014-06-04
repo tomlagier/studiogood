@@ -16,4 +16,5 @@ Route::get('/icons', function(){
 });
 Route::controller('social', 'SocialController');
 Route::get('job/details', 'HomeController@getDetails');
+Route::controller('/user', 'LoginController');
 Route::controller('/', 'HomeController');

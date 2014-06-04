@@ -1,8 +1,7 @@
 @extends('desktop.layouts.main')
-{{-- Home page template --}}
+{{-- Desktop home page --}}
 
 @section('page-tags')
-
 
 {{-- IE compatability for video --}}
 <script type="text/javascript">
@@ -12,10 +11,8 @@
 @stop
 
 @section('page-styles')
-
-{{-- For Video.js --}}
 <link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
-
+<link href="/css/slider.css" rel="stylesheet">
 @stop
 
 @section('page-header')
@@ -33,6 +30,7 @@
 		<div id="progress-bar"></div>
 	</div>
 	
+	{{-- Content separated into chunks for ease of rearrangement --}}
 	<div id="main-container">
 		@include('desktop.home.chunks.video')
 		@include('desktop.home.chunks.about')
@@ -56,5 +54,5 @@
 {{-- For Video.js/Background video --}}
 <script src="//vjs.zencdn.net/4.5/video.js"></script>
 <script src="/js/video.js"></script>
-
+<script src="/js/slider.js"></script>
 @stop
